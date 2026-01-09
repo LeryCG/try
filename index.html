@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <title>Portfolio Template</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="Template de Portafolio" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, desarrollo web, SEO, accesibilidad, Template, Portfolio, Portafolio, Estructura, Sobre, Mi, Trabajos"
+    />
+    <meta name="author" content="Valeria Chacin" />
+    <meta name="robots" content="index, follow" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+
+  <body>
+    <!-- SKIP LINK -->
+    <a href="#main" class="skip-link">Saltar al contenido</a>
+
+    <!-- HEADER / NAV -->
+    <header class="site-header">
+      <div class="back" aria-hidden="true"></div>
+
+      <div class="header-inner">
+        <a class="logo" href="index.html" aria-label="Home">LOGO</a>
+
+        <nav role="navigation" aria-label="Main navigation" class="nav-menu">
+          <!-- Hamburger button -->
+          <button class="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links">
+            <a href="#Hero">INICIO</a>
+            <a href="#projects">TRABAJOS</a>
+            <a href="#about">SOBRE MI</a>
+            <a href="#support">CONTACTO</a>
+          </div>
+
+          <!-- Theme toggle -->
+          <input type="checkbox" class="theme-checkbox" id="theme-toggle" />
+          <span class="slider" aria-hidden="true"></span>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main">
+      <!-- HERO PARALLAX -->
+      <section id="Hero" class="parallax-section">
+        <div class="parallax-content">
+          <h3>TU NOMBRE</h3>
+          <p>Pequeña descripción sobre ti y tu trabajo</p>
+          <button
+            class="btn-primary"
+            data-action="scroll-projects"
+            style="color: antiquewhite; background-color: black"
+          >
+            Ver Trabajos
+          </button>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section about">
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1528825871115-3581a5387919"
+            alt="Fresh produce at the market"
+          />
+        </div>
+        <div class="container">
+          <h1 class="section-title animate-on-scroll">Sobre Mí</h1>
+          <div class="about-grid">
+            <div class="about-content">
+              <div class="about-text animate-on-scroll">
+                <p>
+                  Soy un apasionado desarrollador front-end con 5 años de
+                  experiencia construyendo aplicaciones web responsivas,
+                  accesibles y de alto rendimiento.
+                </p>
+                <p>
+                  Mi enfoque está en crear experiencias de usuario fluidas a
+                  través de código limpio y diseño cuidadoso. Creo en el poder
+                  de JavaScript vanilla y CSS moderno para crear interfaces
+                  impresionantes sin bloat de frameworks.
+                </p>
+              </div>
+              <div class="skills-grid" data-reveal-stagger>
+                <div class="skill-card">
+                  <h3>Adobe Indesign</h3>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--fill: 95%"></div>
+                  </div>
+                </div>
+                <div class="skill-card">
+                  <h3>Adobe Photoshop</h3>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--fill: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill-card">
+                  <h3>Clip Studio Paint</h3>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--fill: 98%"></div>
+                  </div>
+                </div>
+                <div class="skill-card">
+                  <h3>Adobe Illustrator</h3>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--fill: 85%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS (PARALLAX) -->
+      <section class="about-parallax" id="projects">
+        <div class="about-overlay">
+          <div class="about">
+            <h1 style="color: white">Proyectos</h1>
+            <!-- CARD 1 -->
+            <div class="card split-card glass interactive">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1506806732259-39c2d0268443"
+                  alt="Local farmers"
+                />
+              </div>
+              <div class="card-text">
+                <h3>Proyecto 1</h3>
+                <p>Descripción</p>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="card split-card glass interactive">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1464226184884-fa280b87c399"
+                  alt="Fresh vegetables"
+                />
+              </div>
+              <div class="card-text">
+                <h3>Proyecto 2</h3>
+                <p>Descripcion</p>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="card split-card glass interactive">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1506806732259-39c2d0268443"
+                  alt="Local farmers"
+                />
+              </div>
+              <div class="card-text">
+                <h3>Proyecto 3</h3>
+                <p>Descripcion</p>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="card split-card glass interactive">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1506806732259-39c2d0268443"
+                  alt="Local farmers"
+                />
+              </div>
+              <div class="card-text">
+                <h3>Proyecto 4</h3>
+                <p>Descripcion</p>
+              </div>
+               <div class="card-back" hidden id="project-wallpaper">
+                  <div class="card-back-inner">
+                    <div class="project-gallery" data-gallery>
+                      <img
+                        src="assets/images/Wallpaper.jpeg"
+                        alt="Wallpaper - 1"
+                      />
+                      <img
+                        src="assets/images/Wallpaper 3.jpg"
+                        alt="Wallpaper - 2"
+                      />
+                      <img
+                        src="assets/images/Wallpaper 4.jpg"
+                        alt="Wallpaper - 3"
+                      />
+                    </div>
+                    <div class="project-meta">
+                      <h3>WallPaper</h3>
+                      <p class="project-description">
+                        Colección de patrones para fondos de pantalla, pensados
+                        para dispositivos móviles y escritorio.
+                      </p>
+                      <ul class="project-details">
+                        <li><strong>Año:</strong> 2022</li>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="support" class="contact-content">
+        <style>
+          body {
+            font-family: "Oswald", sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
+            color: #222;
+          }
+          .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+          }
+          header {
+            text-align: center;
+            padding-bottom: 40px;
+          }
+          header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+          }
+          header p {
+            font-size: 1rem;
+            color: #555;
+          }
+
+          /* Formulario */
+          .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 30px;
+          }
+          .contact-form,
+          .contact-info {
+            flex: 1 1 400px;
+          }
+          .contact-form form {
+            display: grid;
+            gap: 18px;
+          }
+          .contact-form input,
+          .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+          }
+          .contact-form button {
+            padding: 14px;
+            background: #222;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+          }
+          .contact-form button:hover {
+            background: #444;
+          }
+
+          /* Info lateral */
+          .contact-info h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+          }
+          .contact-info p {
+            margin: 8px 0;
+            color: #333;
+          }
+          .contact-info .info-item {
+            margin-top: 12px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+          }
+          .contact-info .info-item svg {
+            width: 24px;
+            height: 24px;
+            fill: #444;
+          }
+
+          @media (max-width: 768px) {
+            .contact-section {
+              flex-direction: column;
+            }
+          }
+        </style>
+
+        <div class="container">
+          <h1>Contacto</h1>
+          <p>
+            ¿Tienes alguna pregunta o necesitas más información? <br />
+            Estamos aquí para ayudarte.
+          </p>
+
+          <!-- Sección de contacto -->
+          <div class="contact-section">
+            <!-- Formulario -->
+            <div class="contact-form">
+              <form action="#" method="POST">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Nombre completo"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Correo electrónico"
+                  required
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Teléfono (opcional)"
+                />
+                <textarea
+                  name="message"
+                  placeholder="Tu mensaje"
+                  rows="6"
+                  required
+                ></textarea>
+                <button type="submit">Enviar mensaje</button>
+              </form>
+            </div>
+
+            <!-- Información de contacto -->
+            <div class="contact-info">
+              <h3>Información</h3>
+              <p>
+                Nos encantaría saber de ti. Usa este formulario o contáctanos
+                directamente.
+              </p>
+
+              <div class="info-item">
+                <!-- Icono de ubicación -->
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM12 11.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
+                  ></path>
+                </svg>
+                <p>Calle Falsa 123, Ciudad, País</p>
+              </div>
+
+              <div class="info-item">
+                <!-- Icono de teléfono -->
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M6.62 10.79a15.07 15.07 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.07 21 3 13.93 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                  ></path>
+                </svg>
+                <p>+34 600 123 456</p>
+              </div>
+
+              <div class="info-item">
+                <!-- Icono correo -->
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                  ></path>
+                </svg>
+                <p>hola@tudominio.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+      <p>
+        &copy; 2026 Tu Nombre | Todos los Derechos Reservados |
+        <a href="https://github.com/LeryCG/portfolio-template">Github</a>
+      </p>
+    </footer>
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+<!-- Project modal (hidden by default) -->
+    <div
+      id="project-modal"
+      class="project-modal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="project-modal-backdrop" data-modal-close></div>
+      <div class="project-modal-panel" role="document">
+        <button
+          class="modal-close"
+          aria-label="Cerrar proyecto"
+          data-modal-close
+        >
+          &times;
+        </button>
+        <div class="project-modal-content" tabindex="0">
+          <!-- Project content will be injected here -->
+        </div>
+        <div class="modal-controls">
+          <button
+            class="modal-prev"
+            aria-label="Proyecto anterior"
+            data-modal-prev
+          >
+            ‹
+          </button>
+          <button
+            class="modal-next"
+            aria-label="Proyecto siguiente"
+            data-modal-next
+          >
+            ›
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        const items = document.querySelectorAll("[data-observe]");
+        if (!items.length) return;
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              const el = entry.target;
+              // ensure element is rendered (remove any inline display:none)
+              el.style.removeProperty("display");
+
+              if (entry.isIntersecting && entry.intersectionRatio > 0) {
+                el.classList.add("visible");
+              } else {
+                el.classList.remove("visible");
+              }
+            });
+          },
+          { threshold: 0.12 }
+        );
+
+        items.forEach((i) => observer.observe(i));
+      })();
+    </script>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
